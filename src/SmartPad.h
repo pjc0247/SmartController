@@ -91,10 +91,8 @@ struct SP_InputEvent{
 bool SP_PollEvent(SP_InputEvent *event);
 void SP_PushEvent(SP_InputEvent event);
 
-int Send(SOCKET hSocket,void *buf,int len,int flag=0);
-int Recv(SOCKET hSocket,void *buf,int len,int flag=0);
-#define SP_Send(a,b,c,d) Send(a,b,c,d)
-#define SP_Recv(a,b,c,d) Recv(a,b,c,d)
+int SP_Send(SOCKET hSocket,void *buf,int len,int flag=0);
+int SP_Recv(SOCKET hSocket,void *buf,int len,int flag=0);
 
 void SP_StartServer(int port,int maxPad = 1);
 void SP_StopServer();
