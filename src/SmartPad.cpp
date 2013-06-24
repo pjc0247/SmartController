@@ -8,16 +8,12 @@ using namespace std;
 	#pragma comment (lib,"ws2_32")
 	#include <process.h>
 #else
-	#include <arpa/inet.h>
 	#include <sys/types.h>
 	#include <sys/socket.h>
-	#include <netinet/in.h>
 	#include <errno.h>	
-	#include <netdb.h>
-	#include <netinet/tcp.h>
-	#include <netinet/in.h>
 	#include <pthread.h>
 	#include <fcntl.h>
+
 	#include <stdio.h>
 	#include <stdlib.h>
 
